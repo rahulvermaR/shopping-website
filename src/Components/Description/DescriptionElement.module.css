@@ -1,0 +1,136 @@
+.container {
+  padding: 20px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 450px 1fr;
+}
+
+.imgBox {
+  width: 450px;
+  position: relative;
+  overflow: hidden;
+}
+img {
+  width: 450px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+img:hover {
+  scale: 1.04;
+  transition: all 0.3s linear;
+}
+.btnContainer {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0%, -50%);
+  display: flex;
+  width: 450px;
+  justify-content: space-between;
+}
+.changeImg {
+  padding: 5px;
+  font-size: 40px;
+  line-height: 1.6;
+  background: transparent;
+  border: none;
+  color: #ffffffb4;
+  cursor: pointer;
+}
+.changeImg:hover {
+  color: red;
+}
+
+.detailsBox {
+  margin: 50px 0;
+}
+.nameBox {
+  border-bottom: 1px solid #f31818b4;
+  margin-bottom: 15px;
+}
+
+.name {
+  font-size: 36px;
+  letter-spacing: 1.8px;
+  margin-bottom: 5px;
+}
+.description {
+  font-size: 24px;
+  letter-spacing: 1.8px;
+  padding-bottom: 15px;
+}
+.idealFor {
+  letter-spacing: 1.2px;
+  color: rgb(2, 105, 105);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.priceBox {
+  display: flex;
+  gap: 15px;
+  font-size: 24px;
+  font-weight: bolder;
+  letter-spacing: 1.4px;
+}
+.texes {
+  color: rgb(41, 89, 41);
+  letter-spacing: 1.2px;
+  font-size: 18px;
+  margin-bottom: 32px;
+}
+.sizeContainer {
+  margin-bottom: 30px;
+}
+.selectText {
+  font-weight: bold;
+  letter-spacing: 1.4px;
+  margin-bottom: 10px;
+}
+.sizebox {
+  display: flex;
+  gap: 20px;
+}
+
+.stricke {
+  color: #999595;
+  font-weight: lighter;
+}
+.off {
+  color: #d6610e;
+}
+.sizeBtn {
+  width: 50px;
+  height: 50px;
+  background: none;
+  border: 1px solid rgb(148, 143, 143);
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+  letter-spacing: 1.3px;
+  cursor: pointer;
+}
+.sizeBtn:hover {
+  border: 1px solid red;
+  color: #ff3e6c;
+}
+
+.addBtn {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 10px 60px;
+  background: #ff3e6c;
+  border: none;
+  box-shadow: 0 0 2px 0 #ff3e6c;
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.addBtn:hover {
+  background: #aa2c49;
+  box-shadow: 0 0 2px 0 #aa2c49;
+}

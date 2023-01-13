@@ -1,0 +1,137 @@
+.main {
+  position: relative;
+  width: 100%;
+  width: 1472px;
+}
+.header {
+  background: none;
+  width: 1472px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 10px;
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  z-index: 1000;
+  box-shadow: 0 0 10px 0 black;
+}
+.name {
+  display: flex;
+  align-items: center;
+
+  gap: 30px;
+}
+.siteName {
+  font-size: 24px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bolder;
+  letter-spacing: 1.8px;
+  text-decoration: none;
+  color: black;
+}
+.siteName:hover {
+  color: #a14545;
+}
+.link {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.link:hover {
+  color: #a93030;
+}
+.navigationBox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.Cartcontainer {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.cartHolder {
+  position: relative;
+}
+.cart {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  color: #620808;
+  border-bottom: 1px solid red;
+  animation: cartPopup 300ms 1s ease-in-out;
+}
+.cartHolder div {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  z-index: -1;
+
+  padding: 2px;
+  border-radius: 50%;
+  color: #620808;
+}
+@keyframes cartPopup {
+  0% {
+    scale: 1.2;
+  }
+  50% {
+    scale: 0.5;
+  }
+  100% {
+    scale: 1.2;
+  }
+}
+.button {
+  padding: 5px 10px;
+  font-size: 16px;
+  background-color: #ffffff;
+  border: 2px solid #cccccc;
+  cursor: pointer;
+  color: black;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px 0 black;
+}
+.button:hover {
+  border: 2px solid #333333;
+}
+.childDiv {
+  position: absolute;
+  top: 85px;
+  left: 0;
+  width: 100%;
+}
+.sideBar {
+  padding: 5px;
+  background-color: #ffffff;
+  border: 2px solid #dddddd;
+}
+.child {
+  padding: 5px;
+}
+.profileBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.profileLogo {
+  color: blue;
+}
+.profileBox div {
+  color: #a14545;
+}

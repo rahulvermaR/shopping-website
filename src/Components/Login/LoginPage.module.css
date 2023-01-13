@@ -1,0 +1,75 @@
+.loginBox {
+  width: 100%;
+  height: 88vh;
+  background-color: pink;
+  position: relative;
+}
+.formBox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 35%;
+  height: 70vh;
+  background: #ffffff;
+  padding: 20px 50px;
+  border-radius: 8px;
+  z-index: 100;
+  box-shadow: 0 0 5px 0 #ffffff;
+}
+h1 {
+  font-size: 32px;
+  letter-spacing: 1.2px;
+
+  margin-bottom: 30px;
+}
+.formBox label,
+.formBox input,
+.formBox button {
+  display: block;
+}
+.formBox label {
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 1.2px;
+  margin-bottom: 8px;
+}
+.formBox input {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  padding-left: 15px;
+}
+.formBox input::placeholder {
+  font-size: 16px;
+  letter-spacing: 1.4px;
+}
+
+.loginBtn {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #ff3e6c;
+  box-shadow: 1px 0 3px 0 #ff3e6c;
+  border: none;
+  font-size: 20px;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.loginBtn:hover {
+  background: #b72d4d;
+  box-shadow: 1px 0 3px 0 #b72d4d;
+}
+.haveAcc {
+  background: transparent;
+  color: blue;
+  border: none;
+  font-size: 18px;
+  letter-spacing: 1.1px;
+  cursor: pointer;
+}
+.haveAcc:hover {
+  color: #ff3e6c;
+}

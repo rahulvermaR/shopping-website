@@ -1,0 +1,29 @@
+.conatiner {
+  margin-top: 10px;
+  padding-left: 30px;
+  border-bottom: 1px solid #888888;
+  padding-bottom: 10px;
+}
+.heding {
+  color: rgb(52, 52, 52);
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 1.05px;
+  margin-bottom: 10px;
+}
+.elementCont {
+  border-bottom: 1px solid #888888;
+  padding-bottom: 20px;
+}
+.elementBox {
+  display: flex;
+}
+.elementBox input {
+  width: 18px;
+  margin-right: 10px;
+}
+.elementBox label {
+  font-size: 16px;
+  letter-spacing: 1.02px;
+  color: #333333;
+}

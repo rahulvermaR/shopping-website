@@ -1,0 +1,32 @@
+.form {
+  padding: 10px;
+}
+.form label {
+  display: block;
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.form input {
+  width: 50%;
+  display: block;
+  padding: 2px;
+  margin-bottom: 10px;
+  font-size: 17px;
+}
+.form button {
+  font-size: 18px;
+  color: #eeeeee;
+  font-weight: 600;
+  padding: 8px 25px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background: #a23535;
+}
+.form button:hover {
+  background: #662222;
+}
+.error {
+  color: #832929;
+}
