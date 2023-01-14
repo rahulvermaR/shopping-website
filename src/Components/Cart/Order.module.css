@@ -30,3 +30,9 @@
 .error {
   color: #832929;
 }
+.oderingText {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500px;
+  color: #662222;
+}

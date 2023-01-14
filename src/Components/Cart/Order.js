@@ -8,6 +8,7 @@ export default function Order() {
   const [streeterr, setstreeterr] = useState(false);
   const [postalerr, setpostalerr] = useState(false);
   const [cityerr, setcity] = useState(false);
+  const [ordering, setIsording] = useState(false);
   const nameRef = useRef();
   const streetRef = useRef();
   const postalRef = useRef();
@@ -38,8 +39,13 @@ export default function Order() {
     } else setcity(false);
 
     dispatch(pageActions.clear());
-    navigate("/Home");
+    setIsording(true);
+    setTimeout(() => {
+      setIsording(false);
+      navigate("/Home");
+    }, 4000);
   };
+  if (ordering) return <p className={classes.oderingText}>Ordering...</p>;
   return (
     <form className={classes.form} onSubmit={submitHandler}>
       <label className={nameerr ? classes.error : ""}>Your Name</label>

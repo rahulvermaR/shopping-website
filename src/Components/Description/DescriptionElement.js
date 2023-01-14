@@ -4,6 +4,7 @@ import { BsHandbag } from "react-icons/bs";
 import classes from "./DescriptionElement.module.css";
 import { pageActions } from "../../store/store";
 import { useNavigate } from "react-router-dom";
+import SizeBtn from "./SizeBtn";
 
 export default function DescriptionElement() {
   const dispatch = useDispatch();
@@ -12,15 +13,11 @@ export default function DescriptionElement() {
   const [selectedSize, setselectedSize] = useState(null);
   const data = useSelector((st) => st.Descriptiondata);
   const sizedata = data.productSize.split(", ");
-  const sizeSelectHandler = (e) => {
-    setselectedSize(+e.target.id);
-  };
+
   const sizeEl = sizedata.map((sz) => {
     return (
       <Fragment key={sz}>
-        <button className={classes.sizeBtn} id={sz} onClick={sizeSelectHandler}>
-          {sz}
-        </button>
+        <SizeBtn setSize={setselectedSize} text={sz} />
       </Fragment>
     );
   });
